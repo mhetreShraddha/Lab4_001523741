@@ -93,6 +93,8 @@ public class MainFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(189, 64, 129));
+
         jB1.setBackground(new java.awt.Color(176, 224, 230));
         jB1.setText("Add Encounter");
         jB1.addActionListener(new java.awt.event.ActionListener() {
@@ -153,21 +155,22 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(152, 152, 152)
+                .addGap(34, 34, 34)
                 .addComponent(jB1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(67, 67, 67)
                 .addComponent(jB2)
-                .addGap(18, 18, 18)
+                .addGap(68, 68, 68)
                 .addComponent(jB3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(71, 71, 71)
                 .addComponent(jB4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(77, 77, 77)
                 .addComponent(jB5)
-                .addContainerGap(387, Short.MAX_VALUE))
+                .addContainerGap(268, Short.MAX_VALUE))
         );
 
         jSplitPane1.setLeftComponent(jPanel1);
 
+        jPanel2.setBackground(new java.awt.Color(189, 64, 129));
         jPanel2.setForeground(new java.awt.Color(176, 224, 230));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -198,27 +201,27 @@ public class MainFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB3ActionPerformed
-        CommunityStatus communityStatus = new CommunityStatus(city);
+        ComStat communityStatus = new ComStat(city);
         jSplitPane1.setRightComponent(communityStatus);
     }//GEN-LAST:event_jB3ActionPerformed
 
     private void jB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB1ActionPerformed
-        AddEncounterPanel addEncounterPanel = new AddEncounterPanel(city);
+        AddEncPanel addEncounterPanel = new AddEncPanel(city);
         jSplitPane1.setRightComponent(addEncounterPanel);
     }//GEN-LAST:event_jB1ActionPerformed
 
     private void jB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB2ActionPerformed
-        PatientHistory patientHistory = new PatientHistory(city);
+        PatientHis patientHistory = new PatientHis(city);
         jSplitPane1.setRightComponent(patientHistory);
     }//GEN-LAST:event_jB2ActionPerformed
 
     private void jB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB4ActionPerformed
-        AddPersonPanel addPersonPanel = new AddPersonPanel(city);
+        AddPPanel addPersonPanel = new AddPPanel(city);
         jSplitPane1.setRightComponent(addPersonPanel);
     }//GEN-LAST:event_jB4ActionPerformed
 
     private void jB5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB5ActionPerformed
-        UpdatePersonDetail personDetail = new UpdatePersonDetail(city);
+        UpdatePDetail personDetail = new UpdatePDetail(city);
         jSplitPane1.setRightComponent(personDetail);
     }//GEN-LAST:event_jB5ActionPerformed
 

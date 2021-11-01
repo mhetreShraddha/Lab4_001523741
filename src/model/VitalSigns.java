@@ -11,23 +11,17 @@ package model;
  */
 public class VitalSigns
 {
-    private String pulseRate;
-    private String temperature;
     private String respirationRate;
     private String bloodPressure;
+    
+    private String pulseRate;
+    private String temperature;
+    
 
     public String getPulseRate() {
         return pulseRate;
     }
-
-    public void setPulseRate(String pulseRate) {
-        this.pulseRate = pulseRate;
-    }
-
-    public String getTemperature() {
-        return temperature;
-    }
-
+    
     public void setTemperature(String temperature) {
         this.temperature = temperature;
     }
@@ -35,16 +29,30 @@ public class VitalSigns
     public String getRespirationRate() {
         return respirationRate;
     }
+    
+    public String getBloodPressure() {
+        return bloodPressure;
+    }
+    public void setBloodPressure(String bloodPressure) {
+        this.bloodPressure = bloodPressure;
+    }
+
+
+    public void setPulseRate(String pulseRate) {
+        this.pulseRate = pulseRate;
+        
+    }
+
+    public String getTemperature() {
+        return temperature;
+    }
+
+    
 
     public void setRespirationRate(String respirationRate) {
         this.respirationRate = respirationRate;
     }
 
-    public String getBloodPressure() {
-        return bloodPressure;
-    }
-
-    public void setBloodPressure(String bloodPressure) {
-        this.bloodPressure = bloodPressure;
-    }
+    
+    
 }

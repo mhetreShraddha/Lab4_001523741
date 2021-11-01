@@ -12,9 +12,14 @@ import java.util.List;
  *
  * @author mhetr
  */
+
 public class PersonDirectory
 {
     private List<Person> personList;
+    
+    public void setPersonList(List<Person> personList) {
+        this.personList = personList;
+    }
 
     public PersonDirectory() {
         personList = new ArrayList<>();
@@ -24,7 +29,5 @@ public class PersonDirectory
         return personList;
     }
 
-    public void setPersonList(List<Person> personList) {
-        this.personList = personList;
-    }
+    
 }

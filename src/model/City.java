@@ -28,8 +28,23 @@ public class City
         this.communityList = new ArrayList<>();
     }
     
-    
+    public List<Community> getCommunityList() {
+        return communityList;
+    }
 
+    public void setCommunityList(List<Community> communityList) {
+        this.communityList = communityList;
+    }
+
+    
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+    
     public String getCityName() {
         return cityName;
     }
@@ -38,21 +53,14 @@ public class City
         this.cityName = cityName;
     }
 
-    public String getState() {
-        return state;
+public String toString()
+    {
+        
+        return this.cityName;
     }
 
-    public void setState(String state) {
-        this.state = state;
-    }
 
-    public List<Community> getCommunityList() {
-        return communityList;
-    }
-
-    public void setCommunityList(List<Community> communityList) {
-        this.communityList = communityList;
-    }
+    
     
     public Community addCommunity() {
         Community community = new Community();
@@ -60,8 +68,5 @@ public class City
         return community;
     }
     
-    public String toString()
-    {
-        return this.cityName;
-    }
+    
 }

@@ -15,21 +15,26 @@ import java.util.List;
 public class EncounterHistory
 {
     private List<Encounter> encounterList;
-
+    
+    public void setEncounterList(List<Encounter> encounterList) {
+        this.encounterList = encounterList;
+    }
+    
+   
+    
     public EncounterHistory()
     {
         encounterList = new ArrayList<>();
     }
 
+     public void addEncounter(Encounter encounter) {
+        encounterList.add(encounter);
+    }
+
+    
     public List<Encounter> getEncounterList() {
         return encounterList;
     }
 
-    public void setEncounterList(List<Encounter> encounterList) {
-        this.encounterList = encounterList;
-    }
     
-    public void addEncounter(Encounter encounter) {
-        encounterList.add(encounter);
-    }
 }

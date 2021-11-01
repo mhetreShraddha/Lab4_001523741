@@ -13,6 +13,8 @@ public class Person
 {
     private String name;
     private String age;
+    
+    
     private Patient patient;
 
     public Person() {
@@ -21,6 +23,7 @@ public class Person
 
     public Person(String name, String age) {
         this.name = name;
+        
         this.age = age;
     }
     

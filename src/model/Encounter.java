@@ -13,27 +13,25 @@ import java.util.Date;
  */
 public class Encounter
 {
+    
+    private String hour;
+    private String min;
     private VitalSigns vitalSigns;
     private String doctorName;
     private String encounterDate;
-    private String hour;
-    private String min;
+    
 
     public VitalSigns getVitalSigns() {
         return vitalSigns;
     }
 
-    public void setVitalSigns(VitalSigns vitalSigns) {
-        this.vitalSigns = vitalSigns;
+    
+
+    public void setHour(String hour) {
+        this.hour = hour;
     }
 
-    public String getDoctorName() {
-        return doctorName;
-    }
-
-    public void setDoctorName(String doctorName) {
-        this.doctorName = doctorName;
-    }
+    
 
     public String getEncounterDate() {
         return encounterDate;
@@ -42,20 +40,35 @@ public class Encounter
     public void setEncounterDate(String encounterDate) {
         this.encounterDate = encounterDate;
     }
+    
+     public String getDoctorName() {
+            
+        return doctorName;
+        }
 
+        public void setDoctorName(String doctorName) {
+            this.doctorName = doctorName;
+        }  
+    
+    public void setVitalSigns(VitalSigns vitalSigns) {
+        this.vitalSigns = vitalSigns;
+    }
+    
+    public void setMin(String min) {
+        this.min = min;
+    }
+    
     public String getHour() {
         return hour;
     }
 
-    public void setHour(String hour) {
-        this.hour = hour;
-    }
-
+    
+   
+        
+        
     public String getMin() {
         return min;
     }
 
-    public void setMin(String min) {
-        this.min = min;
-    }
+    
 }

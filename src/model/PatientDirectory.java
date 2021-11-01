@@ -18,6 +18,7 @@ public class PatientDirectory
 
     public PatientDirectory() {
         patientList = new ArrayList<>();
+        
     }
 
     public List<Patient> getPatientList() {

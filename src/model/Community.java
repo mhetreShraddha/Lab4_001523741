@@ -6,6 +6,8 @@
 package model;
 
 import java.util.ArrayList;
+
+
 import java.util.List;
 
 /**
@@ -14,24 +16,26 @@ import java.util.List;
  */
 public class Community {
     private String communityName;
+    
     private List<House> houseList;
 
     public Community() {
         houseList = new ArrayList<>();
     }
 
-    public Community(String communityName) {
-        this.communityName = communityName;
-        houseList = new ArrayList<>();
+    
+    public String toString()
+    {
+        return this.communityName;
     }
     
-
-    public String getCommunityName() {
-        return communityName;
-    }
+    
+   
 
     public void setCommunityName(String communityName) {
         this.communityName = communityName;
+        
+        
     }
 
     public List<House> getHouseList() {
@@ -42,6 +46,16 @@ public class Community {
         this.houseList = houseList;
     }
     
+    
+     public Community(String communityName) {
+        this.communityName = communityName;
+        houseList = new ArrayList<>();
+    }
+    
+
+    public String getCommunityName() {
+        return communityName;
+    }
     public House addHouse()
     {
         House house = new House();
@@ -49,8 +63,5 @@ public class Community {
         return house;
     }
     
-    public String toString()
-    {
-        return this.communityName;
-    }
+    
 }

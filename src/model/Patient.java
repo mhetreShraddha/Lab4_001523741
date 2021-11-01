@@ -11,14 +11,16 @@ package model;
  */
 public class Patient
 {
-    private EncounterHistory encounterHistory;
-    private Person person;
+        private Person person;
 
-    public Patient(Person person)
-    {
-        encounterHistory = new EncounterHistory();
+    private EncounterHistory encounterHistory;
+
+    
+    public void setPerson(Person person) {
         this.person = person;
     }
+    
+    
     
     public EncounterHistory getEncounterHistory() {
         return encounterHistory;
@@ -27,13 +29,17 @@ public class Patient
     public void setEncounterHistory(EncounterHistory encounterHistory) {
         this.encounterHistory = encounterHistory;
     }
+    public Patient(Person person)
+    {
+        encounterHistory = new EncounterHistory();
+        this.person = person;
+    }
+    
+    
 
     public Person getPerson() {
         return this.person;
     }
 
-    public void setPerson(Person person) {
-        this.person = person;
-    }
     
 }
